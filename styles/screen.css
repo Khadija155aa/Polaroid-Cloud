@@ -1,16 +1,14 @@
 /* Import Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
-/* 🎨 Define CSS Variables */
+/* Define CSS Variables */
 :root {
     --main-bg-color: #E9E9E9;
     --primary-text-color: #424242;
     --accent-color: #FF3F3C;
-    --white: #ffffff;
-    --black: #000000;
 }
 
-/* 🌍 Global Styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +16,15 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Body Styling */
 body {
-    background-color: var(--main-bg-color);
+    background: var(--main-bg-color);
     color: var(--primary-text-color);
     text-align: center;
     padding: 40px 0;
 }
 
-/* 🏠 Header */
+/* Header */
 header {
     font-size: 14px;
     font-weight: 400; /* Regular */
@@ -35,17 +34,17 @@ header {
     margin: 0 auto;
 }
 
-/* 🎯 Hero Section */
+/* Hero Section */
 .hero {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
 .hero h2 {
     font-size: 60px;
     font-weight: 900; /* Black */
-    color: var(--black);
+    color: var(--primary-text-color);
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -56,13 +55,14 @@ header {
     margin: 20px auto;
 }
 
-/* 📝 Description Section */
+/* Description Section */
 .description {
     font-size: 18px;
     font-weight: 400; /* Regular */
-    color: var(--primary-text-color);
+    color: #333;
     max-width: 700px;
     margin: 20px auto;
+    text-align: left;
 }
 
 .description h3 {
@@ -71,58 +71,59 @@ header {
     margin-bottom: 10px;
 }
 
-/* ⭐ Features Section */
-.features {
-    text-align: left;
-    max-width: 600px;
-    margin: 20px auto;
-    font-size: 18px;
-    font-weight: 400; /* Regular */
-    line-height: 1.5;
-}
-
-.features ul {
+/* Features List */
+.description ul {
     list-style: none;
     padding-left: 0;
 }
 
-.features li {
+.description li {
     display: flex;
     align-items: center;
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
-.features li img {
-    width: 24px;
+.description li::before {
+    content: "✔️";
     margin-right: 10px;
 }
 
-/* 📩 Subscription Form */
-.subscribe-container {
-    background-color: var(--white);
+/* Newsletter Section */
+.newsletter {
+    background: white;
     padding: 20px;
     margin: 40px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
     max-width: 500px;
+    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.subscribe-container input {
-    flex: 1;
+.newsletter h3 {
+    font-size: 22px;
+    font-weight: 900; /* Black */
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input[type="text"] {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    margin-right: 10px;
     font-weight: 400; /* Regular */
+    width: 100%;
 }
 
-.subscribe-container button {
+.newsletter input[type="button"] {
     background-color: var(--accent-color);
-    color: var(--white);
+    color: white;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -131,11 +132,11 @@ header {
     font-weight: 900; /* Black */
 }
 
-.subscribe-container button:hover {
+.newsletter input[type="button"]:hover {
     background-color: #d62828;
 }
 
-/* ⚡ Footer */
+/* Footer */
 footer {
     padding: 20px;
     font-size: 14px;
