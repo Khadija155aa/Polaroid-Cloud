@@ -54,7 +54,7 @@ header {
     max-width: 600px; /* Adjust to match the text width */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes extra spacing below the image */
-    margin: 0 auto; /* Centers the image */
+    margin: 20px auto; /* Centers the image */
 }
 
 
