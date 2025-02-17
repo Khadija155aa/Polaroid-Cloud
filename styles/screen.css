@@ -1,50 +1,143 @@
+/* Import Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+/* 🎨 Define CSS Variables */
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #FF3F3C;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* 🌍 Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* 🏠 Header */
+header {
+    font-size: 14px;
+    font-weight: 400; /* Regular */
+    text-align: left;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 🎯 Hero Section */
+.hero {
+    max-width: 800px;
+    margin: 50px auto;
     text-align: center;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
+.hero h1 {
+    font-size: 60px;
+    font-weight: 900; /* Black */
+    color: var(--black);
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
-nav ul {
+.hero img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* 📝 Description Section */
+.description {
+    font-size: 18px;
+    font-weight: 400; /* Regular */
+    color: var(--primary-text-color);
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.description h2 {
+    font-size: 22px;
+    font-weight: 900; /* Black */
+    margin-bottom: 10px;
+}
+
+/* ⭐ Features Section */
+.features {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 400; /* Regular */
+    line-height: 1.5;
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features li {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
+.features li img {
+    width: 24px;
+    margin-right: 10px;
 }
 
-nav ul li a {
-    display: inline-block;
+/* 📩 Subscription Form */
+.subscribe-container {
+    background-color: var(--white);
     padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+.subscribe-container input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 400; /* Regular */
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.subscribe-container button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 900; /* Black */
 }
 
-img.about {
-    opacity: 0.5;
+.subscribe-container button:hover {
+    background-color: #d62828;
+}
+
+/* ⚡ Footer */
+footer {
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
 }
