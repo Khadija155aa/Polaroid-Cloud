@@ -86,7 +86,6 @@ header {
 }
 
 .description li::before {
-    content: "✔️";
     margin-right: 10px;
 }
 
