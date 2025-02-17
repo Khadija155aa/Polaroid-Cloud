@@ -42,7 +42,7 @@ header {
     text-align: center;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 60px;
     font-weight: 900; /* Black */
     color: var(--black);
@@ -65,7 +65,7 @@ header {
     margin: 20px auto;
 }
 
-.description h2 {
+.description h3 {
     font-size: 22px;
     font-weight: 900; /* Black */
     margin-bottom: 10px;
