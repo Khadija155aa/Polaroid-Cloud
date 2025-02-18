@@ -1,6 +1,9 @@
 /* Import Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 /* Define CSS Variables */
 :root {
     --main-bg-color: #E9E9E9;
@@ -27,58 +30,46 @@ body {
 /* Header */
 header {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 400; /* Regular */
     text-align: left;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Hero Section */
+/* Hero Section with Background Image */
 .hero {
     max-width: 800px;
-    margin: 40px auto; /* Increased space */
-    text-align: center;
-    position: relative;
-}
-
-.hero h2 {
-    font-size: 60px;
-    font-weight: 900;
-    color: var(--primary-text-color);
-    line-height: 1.1;
-    text-transform: uppercase;
-}
-
-/* Polaroid Image Moved to CSS */
-.hero::after {
-    content: "";
-    background: url('/images/polaroid.png') no-repeat center/contain;
-    display: block;
-    width: 100%;
-    max-width: 600px; /* Adjust to match text width */
-    height: 400px; /* Increase size */
     margin: 20px auto;
+    text-align: center;
+    background-image: url('/images/polaroid.png'); /* Adjust path as needed */
+    background-size: contain; /* Ensures the image fits within the section */
+    background-repeat: no-repeat; /* Avoid repeating */
+    background-position: center; /* Centers the image */
+    height: 500px; /* Adjust height to make image bigger */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Description Section */
 .description {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400; /* Regular */
     color: #333;
     max-width: 700px;
-    margin: 40px auto; /* Increased space */
+    margin: 20px auto;
     text-align: left;
 }
 
 .description h3 {
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 900; /* Black */
     margin-bottom: 20px;
     text-align: center;
 }
 
-/* Features List */
+/* Features List with Icons */
 .description ul {
     list-style: none;
     padding-left: 0;
@@ -89,21 +80,20 @@ header {
     align-items: center;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Icons inside List */
 .description li i {
-    font-size: 24px;
-    margin-right: 12px;
-    color: var(--accent-color);
+    color: var(--accent-color); /* Makes icons stand out */
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 /* Newsletter Section */
 .newsletter {
     background: white;
-    padding: 30px; /* Increased padding */
-    margin: 50px auto; /* More space */
+    padding: 20px;
+    margin: 40px auto;
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -111,7 +101,7 @@ header {
 
 .newsletter h3 {
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 900; /* Black */
     margin-bottom: 20px;
     text-align: center;
 }
@@ -127,6 +117,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: 400; /* Regular */
     width: 100%;
 }
 
@@ -138,7 +129,7 @@ header {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    font-weight: 900;
+    font-weight: 900; /* Black */
 }
 
 .newsletter input[type="button"]:hover {
