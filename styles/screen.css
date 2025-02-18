@@ -38,9 +38,10 @@ header {
     margin: 0 auto;
 }
 
+
 /* Increase font size and position it properly */
 .hero h2 {
-    font-size: 48px; /* Bigger font */
+    font-size: 70px; /* Bigger font */
     font-weight: 900; /* Bold */
     margin-bottom: 10px; /* Reduce space between text and image */
 }
@@ -54,8 +55,7 @@ header {
     background-size: contain; /* Ensures the image fits within the section */
     background-repeat: no-repeat; /* Avoid repeating */
     background-position: center; /* Centers the image */
-    height: 500px; /* Adjust height to make image bigger */
-    display: flex;
+    height: 700px; /* Adjust height to make image bigger */
     flex-direction: column;
     justify-content: center;
 }
