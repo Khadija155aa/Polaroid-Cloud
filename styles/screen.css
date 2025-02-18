@@ -9,6 +9,7 @@
     --main-bg-color: #E9E9E9;
     --primary-text-color: #424242;
     --accent-color: #FF3F3C;
+    --icon-color: #000000; /* Black Icons */
 }
 
 /* Global Reset */
@@ -84,7 +85,7 @@ header {
 }
 
 .description li i {
-    color: var(--accent-color); /* Makes icons stand out */
+    color: var(--icon-color); /* Changed to Black */
     font-size: 20px;
     margin-right: 10px;
 }
