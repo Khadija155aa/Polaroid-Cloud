@@ -38,6 +38,13 @@ header {
     margin: 0 auto;
 }
 
+/* Increase font size and position it properly */
+.hero h2 {
+    font-size: 48px; /* Bigger font */
+    font-weight: 900; /* Bold */
+    margin-bottom: 10px; /* Reduce space between text and image */
+}
+
 /* Hero Section with Background Image */
 .hero {
     max-width: 800px;
